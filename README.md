@@ -8,3 +8,6 @@ This python script requires the [TinCanPython Library](http://rusticisoftware.gi
 As for now, the python script need a full csv dump of all the tables into the `data` folder from the SQL database produced by the Moodle application. 
 The user may also need to proprely set up variable present in the `config.py` file.
 When everything is proprely setup, simply run the `main.py` script.
+
+## Notes 
+This work is incomplete, see [the implementation instruction file](IMPLEMENTATIONS.md) to see how the whole program should work
