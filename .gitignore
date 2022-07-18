@@ -1,0 +1,8 @@
+# ignore all json output made by the program
+log_out/*.json
+
+# ignore the example-test folder, already present in the TinCan module
+example-test
+
+#ignore python cache
+__pycache__
