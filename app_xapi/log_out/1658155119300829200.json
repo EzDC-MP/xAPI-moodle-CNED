@@ -1,0 +1,1 @@
+{"version": "1.0.3", "actor": {"objectType": "Agent", "mbox": "mailto:276250@moodle-example.com"}, "verb": {"id": "http://id.tincanapi.com/verb/viewed", "display": {"en": "viewed"}}, "object": {"id": "http://moodle-example.com/course_1", "objectType": "Activity"}, "timestamp": "2017-08-01T02:15:47+02:00"}

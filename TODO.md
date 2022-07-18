@@ -8,4 +8,5 @@ Here is a list of missing features of this python program  :
 - complete the IMPLEMENTATIONS.md file (more info on what does each files / how to add new functions)  
 - complete the README.md file (more precise instructions)  
 - refactoring/cleaning of the code and better documentation.
-- (and write all of this in a correct english)
+- (and write all of this in a correct english)  
+- rework directory/dependencies issues..

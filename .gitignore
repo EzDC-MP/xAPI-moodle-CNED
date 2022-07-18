@@ -6,3 +6,7 @@ example-test
 
 #ignore python cache
 __pycache__
+*pyc
+
+#ignore csv table (information sensitive)
+*.csv
