@@ -1,5 +1,5 @@
 Here is a list of missing features of this python program  :
-- support of the "completed" style statement  
+- ~~support of the "completed" style statement~~ *DONE*
 - support of the "answered" style statement  
 - support of the logged-in logged-ou statement  
 - error message / auto install of the required library or instructions on how to do so.  

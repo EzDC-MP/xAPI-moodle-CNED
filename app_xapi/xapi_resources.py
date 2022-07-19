@@ -65,7 +65,7 @@ event_list = {
    r"\gradereport_user\event\grade_report_viewed" : "viewed",
    r"\mod_lti\event\course_module_viewed" : "viewed",
    #completed event
-   r"\core\event\course_module_completion_updated" : "course_completed"
+   r"\core\event\course_module_completion_updated" : "module_completed"
    #
 
 }

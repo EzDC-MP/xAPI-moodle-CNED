@@ -33,7 +33,7 @@ def log_to_statement(csvline):
         return None
     
     eventname = csvline['eventname']
-    print(eventname)
+    #print(eventname)
     if eventname in xapi_resources.event_list:
         event_type = xapi_resources.event_list[eventname]
     else:
@@ -41,6 +41,10 @@ def log_to_statement(csvline):
 
     if event_type=="viewed":
         statement = statements.make_viewed(csvline)
+    
+    if event_type=="module_completed":
+
+        statement = statements.make_module_completed(csvline)
 
     return statement
 
@@ -57,5 +61,5 @@ if __name__ == '__main__':
             statement = log_to_statement(row)
             if statement != None:
                 statement_str=log_to_statement(row).to_json()
-                print("writing.."+statement_str)
+                print("writing statement : "+statement_str+"\n\n")
                 utils.newjson("log_out", statement_str)

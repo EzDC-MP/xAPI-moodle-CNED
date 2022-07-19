@@ -27,7 +27,7 @@ def create_agent(idnumber):#NOTE probably deprecated
     config.user_file
     @param id a string representing the id of the user in the csv file
     @returns the corresponding actor (with a name and mbox field). None if the id was not found
-    @Note not used.
+    @Note not used / deprecated.
     """
     csvline = utils.fetch_line(config.user_file, "id", idnumber)
     if csvline != None:
