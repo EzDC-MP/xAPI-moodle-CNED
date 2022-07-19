@@ -10,3 +10,6 @@ __pycache__
 
 #ignore csv table (information sensitive)
 *.csv
+
+#ignore my personal script to clear log (won't work in all os.)
+clear_log.sh
