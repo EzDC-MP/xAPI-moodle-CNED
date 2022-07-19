@@ -10,4 +10,4 @@ The user may also need to proprely set up variable present in the [`config.py`](
 When everything is proprely setup, simply run the [`main.py`](app_xapi/main.py) script.
 
 ## Notes 
-This work is incomplete, see [the implementation instruction file](IMPLEMENTATIONS.md) to see how the whole program should work
+This work is incomplete, see [the implementation instruction file](IMPLEMENTATION.md) to see how the whole program should work
