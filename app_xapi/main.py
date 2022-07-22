@@ -1,5 +1,5 @@
 """
-Python script dedicated to take moodle-generated log csv (ver 3.5)
+Python script dedicated to take moodle-generated logstore table csv (ver 3.4)
 and create .json files describing xAPI statement following rules dictated at 
 https://profiles.adlnet.gov/organization/76fcc051-ef64-4ba4-bfb4-b8035a7d1bf7/profile/e04ed3e2-8927-49c1-a296-2b210d6f269a/version/59c38ed7-428d-44bd-a6c8-bda383a56a92
 """
@@ -23,9 +23,10 @@ from tincan import (
 
 def log_to_statement(csvline):
     """
-    Make a statement solely produced off the config.log_file. this function will only process 
+    Make a statement from a csvline in mdl_logstore_standard_log. This function will only process 
     events with edulevel value of 2 and events present in the xapi_resouces.event_list.
-    @param csvline a dictionary representing a line of the config.log_file csv file.
+
+    @param csvline a dictionary representing a line of the config.mdl_logstore_standard_log file.
     @see csv.DictReader()
     @returns tincan statement if the event was successfully processed. None otherwise
     """
@@ -55,11 +56,11 @@ if __name__ == '__main__':
     #print(actor)
 
     import csv
-    with open(config.log_file, newline='') as csvfile:
+    with open(config.mdl_logstore_standard_log, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             statement = log_to_statement(row)
             if statement != None:
                 statement_str=log_to_statement(row).to_json()
-                print("writing statement : "+statement_str+"\n\n")
+                print("Writing statement : "+statement_str+"\n\n") #Note : this line could (should) be removed for performance issue
                 utils.newjson("log_out", statement_str)
